@@ -2,6 +2,8 @@
 
 Personal repository for learning and experimenting with **Game Boy Advance** development using **devkitPro**, **devkitARM**, **libgba**, and **mGBA**.
 
+Some of the initial learning notes and examples in this repository are based on the tutorial [Tutorial de programación para Game Boy Advance](https://www.migsantiago.com/index.php/tutoriales/tutorial-de-programacion-para-game-boy-advance) by Mig Santiago, adapted to a modern devkitPro/devkitARM setup.
+
 This repository contains setup notes, installation references, BIOS-related files for local emulator usage, and small GBA example projects created while learning how to build `.gba` ROMs from C source code.
 
 ## About
