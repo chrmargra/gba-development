@@ -4,7 +4,29 @@ Personal repository for learning and experimenting with **Game Boy Advance** dev
 
 Some of the initial learning notes and examples in this repository are based on the tutorial [Tutorial de programación para Game Boy Advance](https://www.migsantiago.com/index.php/tutoriales/tutorial-de-programacion-para-game-boy-advance) by Mig Santiago, adapted to a modern devkitPro/devkitARM setup.
 
+
 This repository contains setup notes, installation references, BIOS-related files for local emulator usage, and small GBA example projects created while learning how to build `.gba` ROMs from C source code.
+
+## Table of contents
+
+- [About](#about)
+- [Repository structure](#repository-structure)
+- [Tools used](#tools-used)
+- [Requirements](#requirements)
+- [Environment variables](#environment-variables)
+- [Creating a new GBA project](#creating-a-new-gba-project)
+- [Basic Hello World example](#basic-hello-world-example)
+- [Compiling a project](#compiling-a-project)
+- [Running the ROM](#running-the-rom)
+- [Changing the ROM name](#changing-the-rom-name)
+- [Common issues](#common-issues)
+  - [`undefined reference to 'main'`](#undefined-reference-to-main)
+  - [`strlen` implicit declaration error](#strlen-implicit-declaration-error)
+  - [`shell-init: error retrieving current directory`](#shell-init-error-retrieving-current-directory)
+  - [Editor shows red errors on GBA includes](#editor-shows-red-errors-on-gba-includes)
+- [Useful commands](#useful-commands)
+- [Notes](#notes)
+- [License](#license)
 
 ## About
 
@@ -46,7 +68,10 @@ This development environment uses:
 
 ## Requirements
 
+
 This setup is currently based on macOS.
+
+For a more detailed step-by-step installation guide, check the `.docx` document included in the `Installation/` folder. It contains additional notes about installing devkitPro, configuring the terminal environment, creating the first project, compiling the ROM, and running it with mGBA.
 
 Required tools:
 
