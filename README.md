@@ -4,13 +4,14 @@ Game Boy Advance development workspace using **devkitPro**, **devkitARM**, **lib
 
 Some of the initial learning notes and examples in this repository are based on the tutorial [Tutorial de programación para Game Boy Advance](https://www.migsantiago.com/index.php/tutoriales/tutorial-de-programacion-para-game-boy-advance) by Mig Santiago, adapted to a modern devkitPro/devkitARM setup.
 
-This repository contains setup notes, installation references, BIOS-related files for local emulator usage, and small GBA example projects focused on building `.gba` ROMs from C source code.
+This repository contains setup notes, required executable references, BIOS-related files for local emulator usage, and small GBA example projects focused on building `.gba` ROMs from C source code.
 
 ## Table of contents
 
 - [About](#about)
 - [Repository structure](#repository-structure)
 - [Tools used](#tools-used)
+- [Required executables](#required-executables)
 - [Requirements](#requirements)
 - [Environment variables](#environment-variables)
 - [Creating a new GBA project](#creating-a-new-gba-project)
@@ -37,6 +38,7 @@ It includes notes and examples for:
 - Creating new GBA projects from the official devkitPro template.
 - Compiling `.gba` ROM files with `make`.
 - Running and testing ROMs using mGBA.
+- Keeping setup documentation and required executable files organized.
 - Organizing small examples and experiments.
 
 ## Repository structure
@@ -49,8 +51,11 @@ gba-development/
 ├── GBAProjects/
 │   └── GBA projects and example ROMs
 │
-├── Installation/
-│   └── Notes and documentation about the setup process
+├── RequiredExecutables/
+│   └── Required installer and executable files referenced by the setup guide
+│
+├── Setup/
+│   └── Setup documentation and step-by-step installation guides
 │
 └── README.md
 ```
@@ -65,12 +70,25 @@ This development environment uses:
 - **make**: build system used by the devkitPro templates.
 - **mGBA**: emulator used to test compiled `.gba` ROM files.
 
-## Requirements
+## Required executables
 
+The `RequiredExecutables/` folder contains installer or executable files referenced by the setup documentation.
+
+These files are kept separate from the source projects and setup documents so the repository structure stays clear:
+
+- `Setup/`: setup notes, installation guides, and documentation.
+- `RequiredExecutables/`: installer or executable files needed during setup.
+- `GBAProjects/`: GBA source projects and generated examples.
+
+If an executable is included here, it should be treated as a convenience copy for reproducing the documented environment.
+
+When possible, it is still recommended to check the official project pages for the latest available versions before installing anything.
+
+## Requirements
 
 This setup is currently based on macOS.
 
-For a more detailed step-by-step installation guide, check the `.docx` document included in the `Installation/` folder. It contains additional notes about installing devkitPro, configuring the terminal environment, creating the first project, compiling the ROM, and running it with mGBA.
+For a more detailed step-by-step setup guide, check the `.docx` document included in the `Setup/` folder. It contains additional notes about installing devkitPro, configuring the terminal environment, creating the first project, compiling the ROM, and running it with mGBA.
 
 Required tools:
 
