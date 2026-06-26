@@ -1,11 +1,10 @@
 # GBA Development
 
-Personal repository for learning and experimenting with **Game Boy Advance** development using **devkitPro**, **devkitARM**, **libgba**, and **mGBA**.
+Game Boy Advance development workspace using **devkitPro**, **devkitARM**, **libgba**, and **mGBA**.
 
 Some of the initial learning notes and examples in this repository are based on the tutorial [Tutorial de programación para Game Boy Advance](https://www.migsantiago.com/index.php/tutoriales/tutorial-de-programacion-para-game-boy-advance) by Mig Santiago, adapted to a modern devkitPro/devkitARM setup.
 
-
-This repository contains setup notes, installation references, BIOS-related files for local emulator usage, and small GBA example projects created while learning how to build `.gba` ROMs from C source code.
+This repository contains setup notes, installation references, BIOS-related files for local emulator usage, and small GBA example projects focused on building `.gba` ROMs from C source code.
 
 ## Table of contents
 
@@ -30,15 +29,15 @@ This repository contains setup notes, installation references, BIOS-related file
 
 ## About
 
-The main goal of this repository is to document and organize my Game Boy Advance development environment.
+The goal of this repository is to document and organize a practical Game Boy Advance development environment.
 
-It is intended as a personal learning workspace for:
+It includes notes and examples for:
 
 - Setting up devkitPro on macOS.
 - Creating new GBA projects from the official devkitPro template.
 - Compiling `.gba` ROM files with `make`.
 - Running and testing ROMs using mGBA.
-- Keeping small examples and experiments organized.
+- Organizing small examples and experiments.
 
 ## Repository structure
 
@@ -415,9 +414,9 @@ open -a mGBA ./*.gba
 
 ## Notes
 
-This repository is mainly intended for personal learning and experimentation.
+This repository focuses on the basics of Game Boy Advance development.
 
-The examples here are simple and focused on understanding the basics of GBA development before moving on to more advanced topics such as:
+The examples here are simple and designed to build understanding before moving on to more advanced topics such as:
 
 - Button input.
 - Sprites.
@@ -430,6 +429,6 @@ The examples here are simple and focused on understanding the basics of GBA deve
 
 ## License
 
-This repository is for personal learning purposes.
+This project is intended for learning, experimentation, and documentation of the GBA development setup.
 
 If third-party templates, examples, or assets are added, their original licenses should be respected.
