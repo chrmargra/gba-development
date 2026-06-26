@@ -24,8 +24,8 @@ TARGET		:= $(notdir $(CURDIR))
 BUILD		:= build
 SOURCES		:= source
 INCLUDES	:= include
-DATA		:=
-MUSIC		:=
+DATA		:= data
+MUSIC		:= music
 
 #---------------------------------------------------------------------------------
 # options for code generation

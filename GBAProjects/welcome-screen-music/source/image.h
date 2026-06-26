@@ -4,11 +4,12 @@
 //======================================================================
 //
 //	image, 240x160@8, 
+//	Alphabit on.
 //	+ palette 256 entries, not compressed
 //	+ bitmap not compressed
 //	Total size: 512 + 38400 = 38912
 //
-//	Time-stamp: 2026-06-26, 21:04:24
+//	Time-stamp: 2026-06-26, 23:05:40
 //	Exported by Cearn's GBA Image Transmogrifier, v0.9.2
 //	( http://www.coranac.com/projects/#grit )
 //
