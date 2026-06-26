@@ -1,11 +1,11 @@
 Archive member included to satisfy reference by file (symbol)
 
 /opt/devkitpro/libgba/lib/libgba.a(console.o)
-                              simple-hello-world.o (consoleDemoInit)
+                              simple_hello_world.o (consoleDemoInit)
 /opt/devkitpro/libgba/lib/libgba.a(CpuSet.o)
                               /opt/devkitpro/libgba/lib/libgba.a(console.o) (CpuFastSet)
 /opt/devkitpro/libgba/lib/libgba.a(interrupt.o)
-                              simple-hello-world.o (irqInit)
+                              simple_hello_world.o (irqInit)
 /opt/devkitpro/libgba/lib/libgba.a(InterruptDispatcher.o)
                               /opt/devkitpro/libgba/lib/libgba.a(interrupt.o) (IntrMain)
 /opt/devkitpro/libgba/lib/libgba.a(amiga.fnt.o)
@@ -25,7 +25,7 @@ Archive member included to satisfy reference by file (symbol)
 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/../../../../arm-none-eabi/lib/thumb/libg.a(libc_a-stdio.o)
                               /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/../../../../arm-none-eabi/lib/thumb/libg.a(libc_a-findfp.o) (__sread)
 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/../../../../arm-none-eabi/lib/thumb/libg.a(libc_a-iprintf.o)
-                              simple-hello-world.o (iprintf)
+                              simple_hello_world.o (iprintf)
 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/../../../../arm-none-eabi/lib/thumb/libg.a(libc_a-fclose.o)
                               /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/../../../../arm-none-eabi/lib/thumb/libg.a(libc_a-findfp.o) (_fclose_r)
 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/../../../../arm-none-eabi/lib/thumb/libg.a(libc_a-vfiprintf.o)
@@ -199,9 +199,9 @@ Discarded input sections
                 0x00000000       0x24 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/crtbegin.o
  .data.__dso_handle
                 0x00000000        0x4 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/crtbegin.o
- .text          0x00000000        0x0 simple-hello-world.o
- .data          0x00000000        0x0 simple-hello-world.o
- .bss           0x00000000        0x0 simple-hello-world.o
+ .text          0x00000000        0x0 simple_hello_world.o
+ .data          0x00000000        0x0 simple_hello_world.o
+ .bss           0x00000000        0x0 simple_hello_world.o
  .data          0x00000000        0x0 /opt/devkitpro/libgba/lib/libgba.a(console.o)
  .data          0x00000000        0x0 /opt/devkitpro/libgba/lib/libgba.a(CpuSet.o)
  .bss           0x00000000        0x0 /opt/devkitpro/libgba/lib/libgba.a(CpuSet.o)
@@ -698,7 +698,7 @@ Linker script and memory map
                 0x08000220       0x2c /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/crtbegin.o
  .text.frame_dummy
                 0x0800024c       0x24 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/crtbegin.o
- .text.startup  0x08000270       0x20 simple-hello-world.o
+ .text.startup  0x08000270       0x20 simple_hello_world.o
                 0x08000270                main
  .text          0x08000290      0x4b8 /opt/devkitpro/libgba/lib/libgba.a(console.o)
                 0x08000290                con_read
@@ -1009,7 +1009,7 @@ Linker script and memory map
  *(.roda)
  *(.rodata.*)
  .rodata.str1.4
-                0x08007ae0       0x94 simple-hello-world.o
+                0x08007ae0       0x94 simple_hello_world.o
                                  0x16 (size before relaxing)
  .rodata.str1.4
                 0x08007b74        0x0 /opt/devkitpro/libgba/lib/libgba.a(console.o)
@@ -1330,7 +1330,7 @@ Linker script and memory map
  *(.comment)
  .comment       0x00000000       0x3b /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/crtbegin.o
                                  0x19 (size before relaxing)
- .comment       0x0000003b        0x0 simple-hello-world.o
+ .comment       0x0000003b        0x0 simple_hello_world.o
                                  0x19 (size before relaxing)
  .comment       0x0000003b        0x0 /opt/devkitpro/libgba/lib/libgba.a(console.o)
                                  0x24 (size before relaxing)
@@ -1360,7 +1360,7 @@ Linker script and memory map
 .debug_aranges  0x00000000      0x1e0
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x20 simple-hello-world.o
+                0x00000000       0x20 simple_hello_world.o
  .debug_aranges
                 0x00000020       0x20 /opt/devkitpro/libgba/lib/libgba.a(console.o)
  .debug_aranges
@@ -1395,7 +1395,7 @@ Linker script and memory map
 
 .debug_info     0x00000000     0x2c05
  *(.debug_info)
- .debug_info    0x00000000      0x1a1 simple-hello-world.o
+ .debug_info    0x00000000      0x1a1 simple_hello_world.o
  .debug_info    0x000001a1     0x1b80 /opt/devkitpro/libgba/lib/libgba.a(console.o)
  .debug_info    0x00001d21      0x136 /opt/devkitpro/libgba/lib/libgba.a(CpuSet.o)
  .debug_info    0x00001e57      0x418 /opt/devkitpro/libgba/lib/libgba.a(interrupt.o)
@@ -1413,7 +1413,7 @@ Linker script and memory map
 
 .debug_abbrev   0x00000000      0xce5
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x11d simple-hello-world.o
+ .debug_abbrev  0x00000000      0x11d simple_hello_world.o
  .debug_abbrev  0x0000011d      0x547 /opt/devkitpro/libgba/lib/libgba.a(console.o)
  .debug_abbrev  0x00000664       0xa6 /opt/devkitpro/libgba/lib/libgba.a(CpuSet.o)
  .debug_abbrev  0x0000070a      0x21f /opt/devkitpro/libgba/lib/libgba.a(interrupt.o)
@@ -1431,7 +1431,7 @@ Linker script and memory map
 
 .debug_line     0x00000000     0x1e4b
  *(.debug_line)
- .debug_line    0x00000000      0x150 simple-hello-world.o
+ .debug_line    0x00000000      0x150 simple_hello_world.o
  .debug_line    0x00000150      0xbc3 /opt/devkitpro/libgba/lib/libgba.a(console.o)
  .debug_line    0x00000d13      0x17e /opt/devkitpro/libgba/lib/libgba.a(CpuSet.o)
  .debug_line    0x00000e91      0x950 /opt/devkitpro/libgba/lib/libgba.a(interrupt.o)
@@ -1449,7 +1449,7 @@ Linker script and memory map
 
 .debug_frame    0x00000000      0x2dc
  *(.debug_frame)
- .debug_frame   0x00000000       0x28 simple-hello-world.o
+ .debug_frame   0x00000000       0x28 simple_hello_world.o
  .debug_frame   0x00000028       0xf8 /opt/devkitpro/libgba/lib/libgba.a(console.o)
  .debug_frame   0x00000120       0x30 /opt/devkitpro/libgba/lib/libgba.a(CpuSet.o)
  .debug_frame   0x00000150       0xb0 /opt/devkitpro/libgba/lib/libgba.a(interrupt.o)
@@ -1461,7 +1461,7 @@ Linker script and memory map
 
 .debug_str      0x00000000     0x169e
  *(.debug_str)
- .debug_str     0x00000000     0x169e simple-hello-world.o
+ .debug_str     0x00000000     0x169e simple_hello_world.o
                                 0x280 (size before relaxing)
  .debug_str     0x0000169e        0x0 /opt/devkitpro/libgba/lib/libgba.a(console.o)
                                 0xbe5 (size before relaxing)
@@ -1527,7 +1527,7 @@ Linker script and memory map
  .ARM.attributes
                 0x0000003c       0x2a /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/crtbegin.o
  .ARM.attributes
-                0x00000066       0x2a simple-hello-world.o
+                0x00000066       0x2a simple_hello_world.o
  .ARM.attributes
                 0x00000090       0x2a /opt/devkitpro/libgba/lib/libgba.a(console.o)
  .ARM.attributes
@@ -1718,7 +1718,7 @@ Linker script and memory map
 LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/../../../../arm-none-eabi/lib/thumb/gba_crt0.o
 LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/crti.o
 LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/crtbegin.o
-LOAD simple-hello-world.o
+LOAD simple_hello_world.o
 LOAD /opt/devkitpro/libgba/lib/libmm.a
 LOAD /opt/devkitpro/libgba/lib/libgba.a
 START GROUP
@@ -1735,7 +1735,7 @@ LOAD linker stubs
 .debug_rnglists
                 0x00000000      0x198
  .debug_rnglists
-                0x00000000       0x13 simple-hello-world.o
+                0x00000000       0x13 simple_hello_world.o
  .debug_rnglists
                 0x00000013       0xed /opt/devkitpro/libgba/lib/libgba.a(console.o)
  .debug_rnglists
