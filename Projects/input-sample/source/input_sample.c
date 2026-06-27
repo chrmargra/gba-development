@@ -4,7 +4,6 @@
 #include <gba_input.h>
 #include <maxmod.h>
 #include <stdio.h>
-
 #include "soundbank.h"
 
 extern const unsigned char soundbank_bin[];
@@ -15,6 +14,7 @@ void printPressedButton(const char* buttonName) {
 }
 
 int main(void) {
+
     irqInit();
     irqSet(IRQ_VBLANK, mmVBlank);
     irqEnable(IRQ_VBLANK);
@@ -31,10 +31,13 @@ int main(void) {
         VBlankIntrWait();
         mmFrame();
 
+        // Updates the current state of all GBA buttons.
         scanKeys();
 
+        // Gets the button that was newly pressed during this frame.
         u16 keys = keysDown();
 
+        // Identifies the pressed button and displays its name on the screen.
         switch (keys) {
             case KEY_A:
                 printPressedButton("A");

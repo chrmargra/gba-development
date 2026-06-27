@@ -1430,23 +1430,23 @@ Linker script and memory map
  .debug_abbrev  0x00000d3e       0x28 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_clzdi2.o)
  .debug_abbrev  0x00000d66       0x28 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_clzsi2.o)
 
-.debug_line     0x00000000     0x1f28
+.debug_line     0x00000000     0x1f25
  *(.debug_line)
- .debug_line    0x00000000      0x22d complex_hello_world.o
- .debug_line    0x0000022d      0xbc3 /opt/devkitpro/libgba/lib/libgba.a(console.o)
- .debug_line    0x00000df0      0x17e /opt/devkitpro/libgba/lib/libgba.a(CpuSet.o)
- .debug_line    0x00000f6e      0x950 /opt/devkitpro/libgba/lib/libgba.a(interrupt.o)
- .debug_line    0x000018be       0x78 /opt/devkitpro/libgba/lib/libgba.a(InterruptDispatcher.o)
- .debug_line    0x00001936       0x52 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_thumb1_case_uqi.o)
- .debug_line    0x00001988       0x53 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_thumb1_case_uhi.o)
- .debug_line    0x000019db       0x67 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_udivsi3.o)
- .debug_line    0x00001a42       0x73 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_divsi3.o)
- .debug_line    0x00001ab5       0x4a /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_dvmd_tls.o)
- .debug_line    0x00001aff       0x4e /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_aeabi_uldivmod.o)
- .debug_line    0x00001b4d      0x149 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_muldi3.o)
- .debug_line    0x00001c96      0x1e7 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_udivmoddi4.o)
- .debug_line    0x00001e7d       0x54 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_clzdi2.o)
- .debug_line    0x00001ed1       0x57 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_clzsi2.o)
+ .debug_line    0x00000000      0x22a complex_hello_world.o
+ .debug_line    0x0000022a      0xbc3 /opt/devkitpro/libgba/lib/libgba.a(console.o)
+ .debug_line    0x00000ded      0x17e /opt/devkitpro/libgba/lib/libgba.a(CpuSet.o)
+ .debug_line    0x00000f6b      0x950 /opt/devkitpro/libgba/lib/libgba.a(interrupt.o)
+ .debug_line    0x000018bb       0x78 /opt/devkitpro/libgba/lib/libgba.a(InterruptDispatcher.o)
+ .debug_line    0x00001933       0x52 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_thumb1_case_uqi.o)
+ .debug_line    0x00001985       0x53 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_thumb1_case_uhi.o)
+ .debug_line    0x000019d8       0x67 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_udivsi3.o)
+ .debug_line    0x00001a3f       0x73 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_divsi3.o)
+ .debug_line    0x00001ab2       0x4a /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00001afc       0x4e /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x00001b4a      0x149 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_muldi3.o)
+ .debug_line    0x00001c93      0x1e7 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x00001e7a       0x54 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_clzdi2.o)
+ .debug_line    0x00001ece       0x57 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_clzsi2.o)
 
 .debug_frame    0x00000000      0x2f8
  *(.debug_frame)
@@ -1460,37 +1460,37 @@ Linker script and memory map
  .debug_frame   0x00000288       0x34 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_muldi3.o)
  .debug_frame   0x000002bc       0x3c /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_udivmoddi4.o)
 
-.debug_str      0x00000000     0x16c2
+.debug_str      0x00000000     0x16bc
  *(.debug_str)
- .debug_str     0x00000000     0x16c2 complex_hello_world.o
-                                0x2ab (size before relaxing)
- .debug_str     0x000016c2        0x0 /opt/devkitpro/libgba/lib/libgba.a(console.o)
+ .debug_str     0x00000000     0x16bc complex_hello_world.o
+                                0x2a5 (size before relaxing)
+ .debug_str     0x000016bc        0x0 /opt/devkitpro/libgba/lib/libgba.a(console.o)
                                 0xbe5 (size before relaxing)
- .debug_str     0x000016c2        0x0 /opt/devkitpro/libgba/lib/libgba.a(CpuSet.o)
+ .debug_str     0x000016bc        0x0 /opt/devkitpro/libgba/lib/libgba.a(CpuSet.o)
                                 0x1a9 (size before relaxing)
- .debug_str     0x000016c2        0x0 /opt/devkitpro/libgba/lib/libgba.a(interrupt.o)
+ .debug_str     0x000016bc        0x0 /opt/devkitpro/libgba/lib/libgba.a(interrupt.o)
                                 0x334 (size before relaxing)
- .debug_str     0x000016c2        0x0 /opt/devkitpro/libgba/lib/libgba.a(InterruptDispatcher.o)
+ .debug_str     0x000016bc        0x0 /opt/devkitpro/libgba/lib/libgba.a(InterruptDispatcher.o)
                                  0xba (size before relaxing)
- .debug_str     0x000016c2        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_thumb1_case_uqi.o)
+ .debug_str     0x000016bc        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_thumb1_case_uqi.o)
                                  0xf1 (size before relaxing)
- .debug_str     0x000016c2        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_thumb1_case_uhi.o)
+ .debug_str     0x000016bc        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_thumb1_case_uhi.o)
                                  0xf1 (size before relaxing)
- .debug_str     0x000016c2        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_udivsi3.o)
+ .debug_str     0x000016bc        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_udivsi3.o)
                                  0xf6 (size before relaxing)
- .debug_str     0x000016c2        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_divsi3.o)
+ .debug_str     0x000016bc        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_divsi3.o)
                                  0xf4 (size before relaxing)
- .debug_str     0x000016c2        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_dvmd_tls.o)
+ .debug_str     0x000016bc        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_dvmd_tls.o)
                                  0xf7 (size before relaxing)
- .debug_str     0x000016c2        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_aeabi_uldivmod.o)
+ .debug_str     0x000016bc        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_aeabi_uldivmod.o)
                                  0xd7 (size before relaxing)
- .debug_str     0x000016c2        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_muldi3.o)
+ .debug_str     0x000016bc        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_muldi3.o)
                                 0x6ad (size before relaxing)
- .debug_str     0x000016c2        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_udivmoddi4.o)
+ .debug_str     0x000016bc        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_udivmoddi4.o)
                                 0x686 (size before relaxing)
- .debug_str     0x000016c2        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_clzdi2.o)
+ .debug_str     0x000016bc        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_clzdi2.o)
                                  0xe4 (size before relaxing)
- .debug_str     0x000016c2        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_clzsi2.o)
+ .debug_str     0x000016bc        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/libgcc.a(_clzsi2.o)
                                  0xe4 (size before relaxing)
 
 .debug_loc
@@ -1730,7 +1730,7 @@ LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/../../../../arm-none-
 END GROUP
 LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/crtend.o
 LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/crtn.o
-OUTPUT(/Users/christian/Projects/gba-development/GBAProjects/complex-hello-world/complex-hello-world.elf elf32-littlearm)
+OUTPUT(/Users/christian/Projects/gba-development/Projects/complex-hello-world/complex-hello-world.elf elf32-littlearm)
 LOAD linker stubs
 
 .debug_loclists

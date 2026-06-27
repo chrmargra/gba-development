@@ -1,5 +1,5 @@
 input_sample.o: \
- /Users/christian/Projects/gba-development/GBAProjects/input-sample/source/input_sample.c \
+ /Users/christian/Projects/gba-development/Projects/input-sample/source/input_sample.c \
  /opt/devkitpro/libgba/include/gba_console.h \
  /opt/devkitpro/libgba/include/gba_base.h \
  /opt/devkitpro/libgba/include/gba_types.h \
@@ -8,7 +8,7 @@ input_sample.o: \
  /opt/devkitpro/libgba/include/gba_input.h \
  /opt/devkitpro/libgba/include/maxmod.h \
  /opt/devkitpro/libgba/include/mm_types.h \
- /Users/christian/Projects/gba-development/GBAProjects/input-sample/source/soundbank.h
+ /Users/christian/Projects/gba-development/Projects/input-sample/source/soundbank.h
 /opt/devkitpro/libgba/include/gba_console.h:
 /opt/devkitpro/libgba/include/gba_base.h:
 /opt/devkitpro/libgba/include/gba_types.h:
@@ -17,4 +17,4 @@ input_sample.o: \
 /opt/devkitpro/libgba/include/gba_input.h:
 /opt/devkitpro/libgba/include/maxmod.h:
 /opt/devkitpro/libgba/include/mm_types.h:
-/Users/christian/Projects/gba-development/GBAProjects/input-sample/source/soundbank.h:
+/Users/christian/Projects/gba-development/Projects/input-sample/source/soundbank.h:

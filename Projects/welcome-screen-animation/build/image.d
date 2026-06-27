@@ -1,2 +1,2 @@
 image.o: \
- /Users/christian/Projects/gba-development/GBAProjects/welcome-screen-animation/source/image.c
+ /Users/christian/Projects/gba-development/Projects/welcome-screen-animation/source/image.c

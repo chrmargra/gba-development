@@ -1,5 +1,5 @@
 simple_hello_world.o: \
- /Users/christian/Projects/gba-development/GBAProjects/simple-hello-world/source/simple_hello_world.c \
+ /Users/christian/Projects/gba-development/Projects/simple-hello-world/source/simple_hello_world.c \
  /opt/devkitpro/libgba/include/gba_console.h \
  /opt/devkitpro/libgba/include/gba_base.h \
  /opt/devkitpro/libgba/include/gba_types.h \

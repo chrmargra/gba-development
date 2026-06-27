@@ -421,27 +421,27 @@ Linker script and memory map
  .debug_abbrev  0x00000212      0x21f /opt/devkitpro/libgba/lib/libgba.a(interrupt.o)
  .debug_abbrev  0x00000431       0x14 /opt/devkitpro/libgba/lib/libgba.a(InterruptDispatcher.o)
 
-.debug_line     0x00000000      0xc2a
+.debug_line     0x00000000      0xc24
  *(.debug_line)
- .debug_line    0x00000000       0x74 image.o
- .debug_line    0x00000074      0x1ee welcome_screen.o
- .debug_line    0x00000262      0x950 /opt/devkitpro/libgba/lib/libgba.a(interrupt.o)
- .debug_line    0x00000bb2       0x78 /opt/devkitpro/libgba/lib/libgba.a(InterruptDispatcher.o)
+ .debug_line    0x00000000       0x71 image.o
+ .debug_line    0x00000071      0x1eb welcome_screen.o
+ .debug_line    0x0000025c      0x950 /opt/devkitpro/libgba/lib/libgba.a(interrupt.o)
+ .debug_line    0x00000bac       0x78 /opt/devkitpro/libgba/lib/libgba.a(InterruptDispatcher.o)
 
 .debug_frame    0x00000000       0xd8
  *(.debug_frame)
  .debug_frame   0x00000000       0x28 welcome_screen.o
  .debug_frame   0x00000028       0xb0 /opt/devkitpro/libgba/lib/libgba.a(interrupt.o)
 
-.debug_str      0x00000000      0x606
+.debug_str      0x00000000      0x5fd
  *(.debug_str)
- .debug_str     0x00000000      0x606 image.o
-                                0x115 (size before relaxing)
- .debug_str     0x00000606        0x0 welcome_screen.o
-                                0x3b6 (size before relaxing)
- .debug_str     0x00000606        0x0 /opt/devkitpro/libgba/lib/libgba.a(interrupt.o)
+ .debug_str     0x00000000      0x5fd image.o
+                                0x10f (size before relaxing)
+ .debug_str     0x000005fd        0x0 welcome_screen.o
+                                0x3b0 (size before relaxing)
+ .debug_str     0x000005fd        0x0 /opt/devkitpro/libgba/lib/libgba.a(interrupt.o)
                                 0x334 (size before relaxing)
- .debug_str     0x00000606        0x0 /opt/devkitpro/libgba/lib/libgba.a(InterruptDispatcher.o)
+ .debug_str     0x000005fd        0x0 /opt/devkitpro/libgba/lib/libgba.a(InterruptDispatcher.o)
                                  0xba (size before relaxing)
 
 .debug_loc
@@ -514,7 +514,7 @@ LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/../../../../arm-none-
 END GROUP
 LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/crtend.o
 LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/thumb/crtn.o
-OUTPUT(/Users/christian/Projects/gba-development/GBAProjects/welcome-screen/welcome-screen.elf elf32-littlearm)
+OUTPUT(/Users/christian/Projects/gba-development/Projects/welcome-screen/welcome-screen.elf elf32-littlearm)
 LOAD linker stubs
 
 .debug_loclists

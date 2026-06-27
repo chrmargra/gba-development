@@ -11,7 +11,6 @@
 // iprintf() is used to print text to the GBA console.
 #include <stdio.h>
 
-// Program entry point.
 int main(void) {
 
    // Initialize the interrupt system.
