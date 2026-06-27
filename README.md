@@ -48,7 +48,7 @@ gba-development/
 ├── Bios/
 │   └── Local BIOS-related files for emulator usage
 │
-├── GBAProjects/
+├── Projects/
 │   └── GBA projects and example ROMs
 │
 ├── RequiredExecutables/
@@ -78,7 +78,7 @@ These files are kept separate from the source projects and setup documents so th
 
 - `Setup/`: setup notes, installation guides, and documentation.
 - `RequiredExecutables/`: installer or executable files needed during setup.
-- `GBAProjects/`: GBA source projects and generated examples.
+- `Projects/`: GBA source projects and generated examples.
 
 If an executable is included here, it should be treated as a convenience copy for reproducing the documented environment.
 
@@ -149,7 +149,7 @@ Expected paths:
 The easiest way to start a new project is to copy the official devkitPro GBA template.
 
 ```bash
-cd GBAProjects
+cd Projects
 cp -r /opt/devkitpro/examples/gba/template hello-world
 cd hello-world
 ```
