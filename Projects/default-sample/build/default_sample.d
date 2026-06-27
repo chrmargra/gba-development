@@ -1,5 +1,5 @@
-template.o: \
- /Users/christian/Projects/gba-development/GBAProjects/Sample/GBAPrhello-gba/source/template.c \
+default_sample.o: \
+ /Users/christian/Projects/gba-development/Projects/default-sample/source/default_sample.c \
  /opt/devkitpro/libgba/include/gba_console.h \
  /opt/devkitpro/libgba/include/gba_base.h \
  /opt/devkitpro/libgba/include/gba_types.h \
