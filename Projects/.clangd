@@ -1,0 +1,7 @@
+CompileFlags:
+  Add:
+    - -xc
+    - --target=arm-none-eabi
+    - -D__GBA__
+    - -I/opt/devkitpro/libgba/include
+    - -I/opt/devkitpro/devkitARM/arm-none-eabi/include
