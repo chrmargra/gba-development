@@ -15,8 +15,12 @@ typedef struct {
 
 SongEntry songs[] = {
     {"Bloody Tears", MOD_BLOODYTEARS},
-    {"Other song", MOD_BLOODYTEARS},
-    {"Song 3", MOD_BLOODYTEARS},
+    {"Castlevania 1 STG-1", MOD_CAVE06},
+    {"Castlevania 1 STG-6", MOD_CASTLE01},
+    {"Castlevania Cave", MOD_CASTLEVA},
+    {"FF6 OP Theme", MOD_FF3OPENINGTHEME},
+    {"FF8 Breez", MOD_FF8BREEZ},
+    {"Ninja Gaiden", MOD_NINJAGAIDENSHADOWTUNE},
 };
 
 const int songCount = sizeof(songs) / sizeof(SongEntry);
