@@ -38,7 +38,7 @@ It includes notes and examples for:
 - Creating new GBA projects from the official devkitPro template.
 - Compiling `.gba` ROM files with `make`.
 - Running and testing ROMs using mGBA.
-- Keeping setup documentation and required executable files organized.
+- Keeping setup documentation, required executables and guides organized.
 - Organizing small examples and experiments.
 
 ## Repository structure
@@ -54,8 +54,8 @@ gba-development/
 ├── RequiredExecutables/
 │   └── Required installer and executable files referenced by the setup guide
 │
-├── Setup/
-│   └── Setup documentation and step-by-step installation guides
+├── Guides/
+│   └── Setup documentation, installation guides, environment preparation notes and tutorials for converting images, sounds and other assets
 │
 └── README.md
 ```
@@ -76,7 +76,7 @@ The `RequiredExecutables/` folder contains installer or executable files referen
 
 These files are kept separate from the source projects and setup documents so the repository structure stays clear:
 
-- `Setup/`: setup notes, installation guides, and documentation.
+- `Guides/`: setup notes, installation guides, and documentation.
 - `RequiredExecutables/`: installer or executable files needed during setup.
 - `Projects/`: GBA source projects and generated examples.
 
@@ -88,7 +88,7 @@ When possible, it is still recommended to check the official project pages for t
 
 This setup is currently based on macOS.
 
-For a more detailed step-by-step setup guide, check the `.docx` document included in the `Setup/` folder. It contains additional notes about installing devkitPro, configuring the terminal environment, creating the first project, compiling the ROM, and running it with mGBA.
+For a more detailed step-by-step setup guide, check the `.docx` document included in the `Guides/` folder. It contains additional notes about installing devkitPro, configuring the terminal environment, creating the first project, compiling the ROM, and running it with mGBA.
 
 Required tools:
 
@@ -434,16 +434,17 @@ open -a mGBA ./*.gba
 
 This repository focuses on the basics of Game Boy Advance development.
 
-The examples here are simple and designed to build understanding before moving on to more advanced topics such as:
+The examples here are simple and designed to build understanding step by step through small practical projects, including:
 
-- Button input.
-- Sprites.
-- Backgrounds.
-- Tiles.
-- Palettes.
-- Sound.
-- Game loops.
-- Real hardware testing.
+- Displaying text on screen.
+- Handling button input.
+- Loading and displaying images.
+- Loading and playing music or sound effects.
+- Working with palettes and graphical modes.
+- Organizing simple game loops.
+- Preparing reusable screens and screen transitions in future examples.
+- Testing ROMs in an emulator.
+- Preparing projects for real hardware testing.
 
 ## License
 
