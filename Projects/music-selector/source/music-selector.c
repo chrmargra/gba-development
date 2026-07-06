@@ -1,20 +1,46 @@
+#include "soundbank.h"
 #include <gba_console.h>
-#include <gba_systemcalls.h>
-#include <gba_interrupt.h>
 #include <gba_input.h>
+#include <gba_interrupt.h>
+#include <gba_systemcalls.h>
 #include <maxmod.h>
 #include <stdio.h>
-#include "soundbank.h"
 
 extern const unsigned char soundbank_bin[];
 
-void printPressedButton(const char* buttonName) {
-    iprintf("\x1b[8;3H                    ");
-    iprintf("\x1b[8;3HPressed: %s", buttonName);
+typedef struct {
+  const char *name;
+  int mod_id;
+} SongEntry;
+
+SongEntry songs[] = {
+    {"Bloody Tears", MOD_BLOODYTEARS},
+    {"Other song", MOD_BLOODYTEARS},
+    {"Song 3", MOD_BLOODYTEARS},
+};
+
+const int songCount = sizeof(songs) / sizeof(SongEntry);
+
+int selected = 0;
+int currentPlaying = -1;
+
+void drawMenu(void) {
+    iprintf("\x1b[2J\x1b[H");
+    iprintf("\x1b[2;3HSelect a song:");
+
+    for (int i = 0; i < songCount; i++) {
+        char marker = (i == selected) ? '>' : ' ';
+        iprintf("\x1b[%d;3H%c %-20.20s", 4 + i, marker, songs[i].name);
+    }
+
+    if (currentPlaying >= 0) {
+        iprintf("\x1b[%d;3HNow playing: %-20.20s", 5 + songCount, songs[currentPlaying].name);
+    } else {
+        iprintf("\x1b[%d;3HNow playing: (none)      ", 5 + songCount);
+    }
 }
 
 int main(void) {
-
     irqInit();
     irqSet(IRQ_VBLANK, mmVBlank);
     irqEnable(IRQ_VBLANK);
@@ -22,53 +48,36 @@ int main(void) {
     consoleDemoInit();
 
     mmInitDefault((mm_addr)soundbank_bin, 8);
-    mmStart(MOD_BLOODYTEARS, MM_PLAY_LOOP);
-
-    iprintf("\x1b[2;7HButton test");
-    iprintf("\x1b[5;3HPress any GBA button");
+    drawMenu();
 
     while (1) {
         VBlankIntrWait();
         mmFrame();
 
-        // Updates the current state of all GBA buttons.
         scanKeys();
-
-        // Gets the button that was newly pressed during this frame.
         u16 keys = keysDown();
 
-        // Identifies the pressed button and displays its name on the screen.
-        switch (keys) {
-            case KEY_A:
-                printPressedButton("A");
-                break;
-            case KEY_B:
-                printPressedButton("B");
-                break;
-            case KEY_START:
-                printPressedButton("START");
-                break;
-            case KEY_SELECT:
-                printPressedButton("SELECT");
-                break;
-            case KEY_UP:
-                printPressedButton("UP");
-                break;
-            case KEY_DOWN:
-                printPressedButton("DOWN");
-                break;
-            case KEY_LEFT:
-                printPressedButton("LEFT");
-                break;
-            case KEY_RIGHT:
-                printPressedButton("RIGHT");
-                break;
-            case KEY_L:
-                printPressedButton("L");
-                break;
-            case KEY_R:
-                printPressedButton("R");
-                break;
+        if (keys & KEY_UP) {
+            selected = (selected + songCount - 1) % songCount;
+            drawMenu();
+        }
+
+        if (keys & KEY_DOWN) {
+            selected = (selected + 1) % songCount;
+            drawMenu();
+        }
+
+        if (keys & KEY_A) {
+            mmStop();
+            mmStart(songs[selected].mod_id, MM_PLAY_LOOP);
+            currentPlaying = selected;
+            drawMenu();
+        }
+
+        if (keys & KEY_B) {
+            mmStop();
+            currentPlaying = -1;
+            drawMenu();
         }
     }
 }
