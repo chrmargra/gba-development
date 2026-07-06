@@ -30,17 +30,17 @@ int currentPlaying = -1;
 
 void drawMenu(void) {
     iprintf("\x1b[2J\x1b[H");
-    iprintf("\x1b[2;3HSelect a song:");
+    iprintf("\x1b[2;1HSelect a song:");
 
     for (int i = 0; i < songCount; i++) {
         char marker = (i == selected) ? '>' : ' ';
-        iprintf("\x1b[%d;3H%c %-20.20s", 4 + i, marker, songs[i].name);
+        iprintf("\x1b[%d;1H%c %-20.20s", 4 + i, marker, songs[i].name);
     }
 
     if (currentPlaying >= 0) {
-        iprintf("\x1b[%d;3HNow playing: %-20.20s", 5 + songCount, songs[currentPlaying].name);
+        iprintf("\x1b[%d;1HNow playing: %-20.20s", 5 + songCount, songs[currentPlaying].name);
     } else {
-        iprintf("\x1b[%d;3HNow playing: (none)      ", 5 + songCount);
+        iprintf("\x1b[%d;1HNow playing: (none)      ", 5 + songCount);
     }
 }
 
@@ -51,7 +51,7 @@ int main(void) {
 
     consoleDemoInit();
 
-    mmInitDefault((mm_addr)soundbank_bin, 8);
+    mmInitDefault((mm_addr)soundbank_bin, 16); // Try 8 and see what happens!!
     drawMenu();
 
     while (1) {
