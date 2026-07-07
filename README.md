@@ -26,6 +26,7 @@ This repository contains setup notes, required executable references, BIOS-relat
   - [Editor shows red errors on GBA includes](#editor-shows-red-errors-on-gba-includes)
 - [Useful commands](#useful-commands)
 - [Notes](#notes)
+- [Legal notice](#legal-notice)
 - [License](#license)
 
 ## About
@@ -445,6 +446,16 @@ The examples here are simple and designed to build understanding step by step th
 - Preparing reusable screens and screen transitions in future examples.
 - Testing ROMs in an emulator.
 - Preparing projects for real hardware testing.
+
+## Legal notice
+
+Game Boy Advance, GBA, Nintendo, and related names, logos, trademarks, and registered trademarks are the property of Nintendo Co., Ltd. and/or its affiliates.
+
+This repository is an unofficial educational project and is not affiliated with, endorsed by, sponsored by, or approved by Nintendo.
+
+All third-party trademarks, product names, company names, logos, and brands mentioned in this repository are the property of their respective owners.
+
+This repository does not include or distribute commercial Game Boy Advance games, copyrighted Nintendo software, or proprietary BIOS files. Any BIOS-related files or emulator configuration references are intended only for local development and testing with legally obtained files.
 
 ## License
 
