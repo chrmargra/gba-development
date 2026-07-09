@@ -108,7 +108,7 @@ int main(void) {
     irqSet(IRQ_VBLANK, mmVBlank);
     irqEnable(IRQ_VBLANK);
 
-    mmInitDefault((mm_addr)soundbank_bin, 16);
+    mmInitDefault((mm_addr)soundbank_bin, 16); // Try 8 channel and see what happens!!
 
     showTitleScreen();
 
