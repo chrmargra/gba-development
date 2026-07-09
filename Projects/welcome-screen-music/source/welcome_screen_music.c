@@ -12,11 +12,11 @@
 // such as MOD_BLOODYTEARS.
 #include "soundbank.h"
 
-// References the binary soundbank embedded in the ROM by the build system.
-extern const unsigned char soundbank_bin[];
-
 #define PALETTE_COLORS 256
 #define FPS_FADE_IN 15
+
+// References the binary soundbank embedded in the ROM by the build system.
+extern const unsigned char soundbank_bin[];
 
 u16 fadePalette[PALETTE_COLORS];
 

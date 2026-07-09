@@ -108,8 +108,6 @@ int main(void) {
     irqSet(IRQ_VBLANK, mmVBlank);
     irqEnable(IRQ_VBLANK);
 
-    REG_IME = 1;
-
     mmInitDefault((mm_addr)soundbank_bin, 16);
 
     showTitleScreen();
