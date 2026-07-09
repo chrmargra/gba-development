@@ -11,7 +11,7 @@ music-selector.o: \
  /opt/devkitpro/libgba/include/gba_systemcalls.h \
  /opt/devkitpro/libgba/include/maxmod.h \
  /opt/devkitpro/libgba/include/mm_types.h \
- /Users/christian/Projects/gba-development/Projects/music-selector/source/image.h
+ /Users/christian/Projects/gba-development/Projects/music-selector/source/ffix.h
 /opt/devkitpro/libgba/include/gba_video.h:
 /opt/devkitpro/libgba/include/gba_base.h:
 /opt/devkitpro/libgba/include/gba_types.h:
@@ -23,4 +23,4 @@ music-selector.o: \
 /opt/devkitpro/libgba/include/gba_systemcalls.h:
 /opt/devkitpro/libgba/include/maxmod.h:
 /opt/devkitpro/libgba/include/mm_types.h:
-/Users/christian/Projects/gba-development/Projects/music-selector/source/image.h:
+/Users/christian/Projects/gba-development/Projects/music-selector/source/ffix.h:

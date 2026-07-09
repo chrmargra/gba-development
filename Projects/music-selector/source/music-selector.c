@@ -7,7 +7,7 @@
 #include <gba_systemcalls.h>
 #include <maxmod.h>
 #include <stdio.h>
-#include "image.h"
+#include "ffix.h"
 
 #define PALETTE_COLORS 256
 #define FPS_FADE_IN 15
@@ -54,13 +54,16 @@ void setBlackPalette(void) {
 void fadeInPalette(int frames) {
     for (int step = 0; step <= frames; step++) {
         for (int i = 0; i < PALETTE_COLORS; i++) {
-            u16 color = imagePal[i];
+            u16 color = ffixPal[i];
+
             int red = color & 0x1F;
             int green = (color >> 5) & 0x1F;
             int blue = (color >> 10) & 0x1F;
+
             red = (red * step) / frames;
             green = (green * step) / frames;
             blue = (blue * step) / frames;
+
             fadePalette[i] = red | (green << 5) | (blue << 10);
         }
 
@@ -73,7 +76,7 @@ void fadeInPalette(int frames) {
 void showTitleScreen(void) {
     SetMode(MODE_4 | BG2_ON);
     setBlackPalette();
-    dmaCopy(imageBitmap, (void*)VRAM, imageBitmapLen);
+    dmaCopy(ffixBitmap, (void*)VRAM, ffixBitmapLen);
     fadeInPalette(FPS_FADE_IN);
     mmStart(MOD_CONTRA_ED, MM_PLAY_LOOP);
 }
@@ -104,6 +107,8 @@ int main(void) {
     irqInit();
     irqSet(IRQ_VBLANK, mmVBlank);
     irqEnable(IRQ_VBLANK);
+
+    REG_IME = 1;
 
     mmInitDefault((mm_addr)soundbank_bin, 16);
 
